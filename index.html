@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <!--  Meta  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <!--  Favicon icons  -->
+    <meta name="msapplication-TileColor" content="#F1F1F1">
+    <meta name="theme-color" content="#F1F1F1">
+
+    <title></title>
+
+    <!--  Stylesheets  -->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-bg">
+        <header class="header">
+            <div class="container">
+                <button class="menu-btn"><span></span></button>
+                <a class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <nav class="header-nav">
+                    <a href="#catalog" class="go_to">Каталог товаров</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="header-btns">
+                    <a href="#" class="header__search"><img src="img/icon-search.svg" alt=""></a>
+                    <a href="#" class="header__cart"><img src="img/icon-sh-cart.svg" alt="img"></a>
+                    <a href="#" class="header__prof"><img src="img/icon-prof.svg" alt="img"></a>
+                </div>
+                <div class="search-wrap">
+                    <div class="search-form">
+                        <button class="search-cancel">Отменить</button>
+                        <input type="text" id="search__input" placeholder="Поиск по товарам">
+                    </div>
+                    <div class="search-res">
+                        <a href="#">Ячменный напиток Millor - Здоровое питание</a>
+                        <a href="#">Ячменный напиток Millor - Здоровое питание</a>
+                    </div>
+                </div>
+                <div class="menu-wrap">
+                    <div class="top">
+                        <a class="logo"><img src="img/logo.png" alt="logo"></a>
+                        <button class="menu-btn"><span></span></button>
+                    </div>
+                    <div class="menu-nav">
+                        <a href="#catalog" class="go_to">Каталог товаров</a>
+                        <a href="#">Блог</a>
+                        <a href="#">Контакты</a>
+                        <div class="menu-btns">
+                            <a href="#" class="header__cart"><img src="img/icon-sh-cart.svg" alt="img"></a>
+                            <a href="#" class="header__prof"><img src="img/icon-prof.svg" alt="img"></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <a href="mailto:Import@kldrefine.com" class="menu__email">Import@kldrefine.com</a>
+                        <div class="socials">
+                            <a href="#"><img src="img/icon-phone.svg" alt="img"></a>
+                            <a href="#"><img src="img/icon-instagram.svg" alt="img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="container">
+                <div class="main__desc">
+                                    <h1>Свежеобжаренный кофе</h1>
+                <p>
+                    Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.
+                    <br>
+                    <br>
+                    Мы обжариваем кофе <span>каждые выходные</span>.
+                </p>
+                </div>
+                <a href="#" class="btn main__btn">Посмотреть каталог</a>
+                <img src="img/main-img.png" class="main__img" alt="img">
+            </div>
+        </div>
+
+        <div class="catalog" id="catalog">
+            <div class="container">
+                <h2 class="catalog-heading">Каталоги нашей продукции</h2>
+                <div class="catalog-wrap wrapper">
+                    <div class="catalog-item">
+
+                        <div class="catalog-item-img">
+                            <img src="img/1.png" alt="img">
+                        </div>
+                        <p class="catalog-item__heading">Свежеобжаренный кофе</p>
+                        <button class="btn">Купить</button>
+                    </div>
+                    <div class="catalog-item">
+
+                        <div class="catalog-item-img">
+                            <img src="img/2.png" alt="img">
+                        </div>
+                        <p class="catalog-item__heading">Чай и кофейные напитки</p>
+                        <button class="btn">Купить</button>
+                    </div>
+                    <div class="catalog-item">
+
+                        <div class="catalog-item-img">
+                            <img src="img/3.png" alt="img">
+                        </div>
+                        <p class="catalog-item__heading">Продукция для вендинга</p>
+                        <button class="btn">Купить</button>
+                    </div>
+                    <div class="catalog-item">
+
+                        <div class="catalog-item-img">
+                            <img src="img/4.png" alt="img">
+                        </div>
+                        <p class="catalog-item__heading">Здоровое питание</p>
+                        <button class="btn">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="container">
+                <h2 class="title-heading">Товары со скидкой</h2>
+                <p class="title-text">
+                    Наша компания предлагает покупать товар со скидкой не только в дни распродаж
+                    или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!
+                </p>
+                <div class="products-wrap wrapper">
+                    <div class="product">
+                        <div class="discount">
+                            <img src="img/icon-discount.svg" alt="img">
+                            <span>Скидки</span>
+                        </div>
+                        <select class="product-select">
+                            <option value="250">250 г.</option>
+                            <option value="1000">1 000 г.</option>
+                        </select>
+                        <div class="product-wrap">
+                            <div class="product-img"><img src="img/coffee.jpg" alt="img"></div>
+                            <div class="product-descr">
+                                <div class="product-rate">
+                                    <div class="rate-stars">
+                                        <img src="img/star-rate.svg" alt="img">
+                                    </div>
+                                    <p class="product-rate__text">4.0 <span>(32 отзыва)</span></p>
+                                    <img class="rate-coffe" src="img/coffe-rate.svg" alt="img">
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Кислинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Горчинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Насыщенность</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="product__heading">Colombia Supremo</h4>
+                        <p class="product__text">
+                            Свежеобжаренный кофе - описание товара, вкус, аромат
+                        </p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <p class="old">350 ₽</p>
+                                <p class="current">250 ₽</p>
+                            </div>
+                            <button class="btn product__btn ">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="discount">
+                            <img src="img/icon-discount.svg" alt="img">
+                            <span>Скидки</span>
+                        </div>
+                        <select class="product-select">
+                            <option value="250">250 г.</option>
+                            <option value="1000">1 000 г.</option>
+                        </select>
+                        <div class="product-wrap">
+                            <div class="product-img"><img src="img/coffee.jpg" alt="img"></div>
+                            <div class="product-descr">
+                                <div class="product-rate">
+                                    <div class="rate-stars">
+                                        <img src="img/star-rate.svg" alt="img">
+                                    </div>
+                                    <p class="product-rate__text">4.0 <span>(32 отзыва)</span></p>
+                                    <img class="rate-coffe" src="img/coffe-rate.svg" alt="img">
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Кислинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Горчинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Насыщенность</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="product__heading">Colombia Supremo</h4>
+                        <p class="product__text">
+                            Свежеобжаренный кофе - описание товара, вкус, аромат
+                        </p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <p class="old">350 ₽</p>
+                                <p class="current">250 ₽</p>
+                            </div>
+                            <button class="btn product__btn ">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="discount">
+                            <img src="img/icon-discount.svg" alt="img">
+                            <span>Скидки</span>
+                        </div>
+                        <select class="product-select">
+                            <option value="250">250 г.</option>
+                            <option value="1000">1 000 г.</option>
+                        </select>
+                        <div class="product-wrap">
+                            <div class="product-img"><img src="img/coffee.jpg" alt="img"></div>
+                            <div class="product-descr">
+                                <div class="product-rate">
+                                    <div class="rate-stars">
+                                        <img src="img/star-rate.svg" alt="img">
+                                    </div>
+                                    <p class="product-rate__text">4.0 <span>(32 отзыва)</span></p>
+                                    <img class="rate-coffe" src="img/coffe-rate.svg" alt="img">
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Кислинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Горчинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Насыщенность</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="product__heading">Colombia Supremo</h4>
+                        <p class="product__text">
+                            Свежеобжаренный кофе - описание товара, вкус, аромат
+                        </p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <p class="old">350 ₽</p>
+                                <p class="current">250 ₽</p>
+                            </div>
+                            <button class="btn product__btn ">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="discount">
+                            <img src="img/icon-discount.svg" alt="img">
+                            <span>Скидки</span>
+                        </div>
+                        <select class="product-select">
+                            <option value="250">250 г.</option>
+                            <option value="1000">1 000 г.</option>
+                        </select>
+                        <div class="product-wrap">
+                            <div class="product-img"><img src="img/coffee.jpg" alt="img"></div>
+                            <div class="product-descr">
+                                <div class="product-rate">
+                                    <div class="rate-stars">
+                                        <img src="img/star-rate.svg" alt="img">
+                                    </div>
+                                    <p class="product-rate__text">4.0 <span>(32 отзыва)</span></p>
+                                    <img class="rate-coffe" src="img/coffe-rate.svg" alt="img">
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Кислинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Горчинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Насыщенность</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="product__heading">Colombia Supremo</h4>
+                        <p class="product__text">
+                            Свежеобжаренный кофе - описание товара, вкус, аромат
+                        </p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <p class="old">350 ₽</p>
+                                <p class="current">250 ₽</p>
+                            </div>
+                            <button class="btn product__btn ">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="discount">
+                            <img src="img/icon-discount.svg" alt="img">
+                            <span>Скидки</span>
+                        </div>
+                        <select class="product-select">
+                            <option value="250">250 г.</option>
+                            <option value="1000">1 000 г.</option>
+                        </select>
+                        <div class="product-wrap">
+                            <div class="product-img"><img src="img/coffee.jpg" alt="img"></div>
+                            <div class="product-descr">
+                                <div class="product-rate">
+                                    <div class="rate-stars">
+                                        <img src="img/star-rate.svg" alt="img">
+                                    </div>
+                                    <p class="product-rate__text">4.0 <span>(32 отзыва)</span></p>
+                                    <img class="rate-coffe" src="img/coffe-rate.svg" alt="img">
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Кислинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Горчинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Насыщенность</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="product__heading">Colombia Supremo</h4>
+                        <p class="product__text">
+                            Свежеобжаренный кофе - описание товара, вкус, аромат
+                        </p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <p class="old">350 ₽</p>
+                                <p class="current">250 ₽</p>
+                            </div>
+                            <button class="btn product__btn ">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="discount">
+                            <img src="img/icon-discount.svg" alt="img">
+                            <span>Скидки</span>
+                        </div>
+                        <select class="product-select">
+                            <option value="250">250 г.</option>
+                            <option value="1000">1 000 г.</option>
+                        </select>
+                        <div class="product-wrap">
+                            <div class="product-img"><img src="img/coffee.jpg" alt="img"></div>
+                            <div class="product-descr">
+                                <div class="product-rate">
+                                    <div class="rate-stars">
+                                        <img src="img/star-rate.svg" alt="img">
+                                    </div>
+                                    <p class="product-rate__text">4.0 <span>(32 отзыва)</span></p>
+                                    <img class="rate-coffe" src="img/coffe-rate.svg" alt="img">
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Кислинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Горчинка</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="value">
+                                    <div class="value__heading">Насыщенность</div>
+                                    <div class="value-rate">
+                                        <img src="img/value-rate.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="product__heading">Colombia Supremo</h4>
+                        <p class="product__text">
+                            Свежеобжаренный кофе - описание товара, вкус, аромат
+                        </p>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <p class="old">350 ₽</p>
+                                <p class="current">250 ₽</p>
+                            </div>
+                            <button class="btn product__btn ">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-row">
+                    <a href="#" class="btn-link">Смотреть все</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="container">
+            <section class="whyUs">
+                <img class="whyUs__img" src="img/cup-bean.png" alt="img">
+                <div class="whyUs-title">
+                    <h2 class="title-heading">Почему стоит работать именно с нами?</h2>
+                    <div class="whyUs-item">
+                        <img src="img/icon-cup.svg" alt="icon">
+                        <div class="title">
+                            <p class="heading">Всегда свежая обжарка</p>
+                            <p class="title-text">Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка</p>
+                        </div>
+                    </div>
+                    <div class="whyUs-item">
+                        <img src="img/icon-tag.svg" alt="icon">
+                        <div class="title">
+                            <p class="heading">Лучшие цены на продукцию</p>
+                            <p class="title-text">Благодаря крупным объемам производства мы даем лучшие цены на нашу
+                                продукцию
+                            </p>
+                        </div>
+                    </div>
+                    <div class="whyUs-item">
+                        <img src="img/icon-support.svg" alt="icon">
+                        <div class="title">
+                            <p class="heading">Консультации 24/7</p>
+                            <p class="title-text">Наши специалисты готовы всегда помочь
+                                и подсказать вам с выбором кофе или другой продукции.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how">
+                <h2 class="title-heading">Как мы обжариваем наш кофе:</h2>
+                <p class="title-text">
+                    Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство
+                    в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод
+                    имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы
+                    для производства растворимой продукции.
+                    <br>
+                    <br>
+                    Кофе поставляется в контейнерах напрямую с плантаций по всему миру. Компания имеет долгосрочные
+                    контракты по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки
+                    зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же отправляется клиентам. Наши
+                    обжарщики прошли обучение в России и за рубежом.
+                    У нас свой подход к каждой партии зерна.
+                    <br>
+                    <br>
+                    Мы раскрываем вкус каждого сорта кофе.
+                </p>
+                <a href="#" class="btn">Перейти в каталог</a>
+            </section>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="container">
+            <h2 class="title-heading">Новости компании</h2>
+            <div class="news-wrap">
+                <div class="news-item">
+                    <div class="news-item-img">
+                        <img src="img/news-img.jpg" alt="img">
+                    </div>
+                    <div class="news-item-title">
+                        <p class="heading">
+                            Танзанийский кофе. Откуда он взялся и почему мы его так любим?
+                        </p>
+                        <p class="text">
+                            Танзания – красивая африканская страна. Именно здесь расположены легендарные географические
+                            объекты – вулкан Килиманджаро и озеро Виктория.
+                            <br>
+                            <br>
+                            Но наш интерес вызван не столько природными красотами, сколько кофе...
+                        </p>
+                        <a href="#" class="btn-link">Подробнее <img src="img/arrow-left_2.svg" alt="img"></a>
+                    </div>
+                </div>
+                <div class="news-item small">
+                    <p class="heading">
+                        Африканский кофе Кения АА
+                    </p>
+                    <p class="text">
+                        Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов
+                        в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.
+                    </p>
+                    <a href="#" class="btn-link">Подробнее <img src="img/arrow-left_2.svg" alt="img"></a>
+                </div>
+                <div class="news-item small">
+                    <p class="heading">
+                        Африканский кофе Кения АА
+                    </p>
+                    <p class="text">
+                        Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов
+                        в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.
+                    </p>
+                    <a href="#" class="btn-link">Подробнее <img src="img/arrow-left_2.svg" alt="img"></a>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-img">
+                        <img src="img/news-img.jpg" alt="img">
+                    </div>
+                    <div class="news-item-title">
+                        <p class="heading">
+                            Танзанийский кофе. Откуда он взялся и почему мы его так любим?
+                        </p>
+                        <p class="text">
+                            Танзания – красивая африканская страна. Именно здесь расположены легендарные географические
+                            объекты – вулкан Килиманджаро и озеро Виктория.
+                            <br>
+                            <br>
+                            Но наш интерес вызван не столько природными красотами, сколько кофе...
+                        </p>
+                        <a href="#" class="btn-link">Подробнее <img src="img/arrow-left_2.svg" alt="img"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-link news__more">Читать все</a>
+        </div>
+    </div>
+
+    <section class="instagram">
+        <div class="container">
+            <h2 class="title-heading">Мы в Instagram <img src="img/icon-instagram.svg" alt="img"></h2>
+            <img src="img/iphone.png" alt="img" class="instagram__phone">
+            <div class="instagram-wrap">
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="img/main-img.png" alt="img" class="footer__img">
+            <h2 class="title-heading">
+                Подписка на новости и рассылку
+            </h2>
+            <p class="title-text">
+                Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных
+                предложений.
+            </p>
+            <form>
+                <input type="email" required placeholder="Ваш email">
+                <button type="submit" class="btn">Подписаться</button>
+            </form>
+            <p class="descr">
+                Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="#">пользовательского соглашения</a>
+            </p>
+            <div class="footer-bottom">
+                <a href="#" class="logo"><img src="img/logo.png" alt="img"></a>
+                <nav>
+                    <a href="#">Каталог товаров</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
