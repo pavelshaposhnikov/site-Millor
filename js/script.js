@@ -171,5 +171,16 @@ $(document).ready(function () {
 	}
 	/*---------------------------------------------------end*/
 
+	if ($('div').hasClass('main-slider')) {
+		$('.main-slider').slick({
+			speed: 500,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			arrows: false
+		});
+	}
+	/*---------------------------------------------------end*/
+
 });
 
