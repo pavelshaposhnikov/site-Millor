@@ -43,7 +43,16 @@ template {
 }
 
 a {
+  color: #000;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
   background: transparent;
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 a:-webkit-any-link {
@@ -225,6 +234,14 @@ th {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -252,6 +269,10 @@ body {
   scroll-behavior: smooth;
 }
 
+/*========================
+    Container/Wrapper 
+==========================*/
+
 .wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -265,10 +286,6 @@ body {
   justify-content: center;
 }
 
-img {
-  max-width: 100%;
-}
-
 .container {
   width: 100%;
   max-width: 1660px;
@@ -277,28 +294,9 @@ img {
   z-index: 1;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.main-bg {
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-image: url("../img/main-bg.png");
-  background-position: top -400px center;
-}
-
-a {
-  color: #000;
-  -webkit-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-}
-
-a:hover {
-  opacity: 0.7;
-}
+/*========================
+        Common Styles 
+==========================*/
 
 .title-heading {
   font-style: normal;
@@ -354,8 +352,6 @@ a:hover {
   -o-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
-  /* position: relative;
-  z-index: 1; */
 }
 
 .btn:hover {
@@ -529,6 +525,11 @@ a:hover {
     background-position: top 51px right -333px;
   }
 }
+
+
+/*========================
+          Header 
+==========================*/
 
 .header {
   width: 100%;
@@ -1130,10 +1131,6 @@ a:hover {
   }
 }
 
-.main-page__footer {
-  overflow: hidden;
-}
-
 .footer {
   padding: 130px 0 100px;
   background: #fff url("../img/footer-bg.svg") no-repeat;
@@ -1438,6 +1435,13 @@ a:hover {
       max-width: 80%;
   }
 
+}
+
+.main-bg {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url("../img/main-bg.png");
+  background-position: top -400px center;
 }
 
 .main-slider {
@@ -1810,10 +1814,6 @@ a:hover {
   -o-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
-}
-
-.product__slider {
-  overflow: hidden;
 }
 
 .product .discount {
@@ -2256,9 +2256,12 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.main-page__footer {
+  overflow: hidden;
+}
+
 .instagram {
   padding: 85px 0;
-  /* overflow: hidden; */
   background: linear-gradient(to bottom, #FFF7E1 50%, #F9B300 50%);
 }
 
