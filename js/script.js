@@ -133,7 +133,6 @@ $(document).ready(function () {
 					breakpoint: 1200,
 					settings: {
 						infinite: true,
-
 					}
 				},
 			]
@@ -162,9 +161,12 @@ $(document).ready(function () {
 						rows: 1,
 						slidesPerRow: 2,
 						centerMode: false,
-						// slidesToShow: 2,
-
-					}
+					},
+					
+					// breakpoint: 990,
+					// settings: {
+					// 	rows: 2,
+					// }
 				},
 			]
 		});
