@@ -107,7 +107,8 @@ $(document).ready(function () {
 					settings: {
 						slidesToShow: 1,
 						dots: true,
-						initialSlide: 1
+						autoplay: true,
+						autoplaySpeed: 3000,
 					}
 				},
 			]
