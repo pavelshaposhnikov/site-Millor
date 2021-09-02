@@ -103,10 +103,11 @@ $(document).ready(function () {
 					}
 				},
 				{
-					breakpoint: 700,
+					breakpoint: 769,
 					settings: {
 						slidesToShow: 1,
 						dots: true,
+						initialSlide: 1
 					}
 				},
 			]
@@ -163,7 +164,7 @@ $(document).ready(function () {
 			arrows: true,
 			draggable: true,
 			variableWidth: true,
-			rows: 1
+			rows: 1,
 		});
 	}
 
