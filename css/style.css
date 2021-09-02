@@ -3607,7 +3607,7 @@ body {
   }
 
   .catalog-wrap {
-    height: auto;
+    height: 405px;
   }
 
   .catalog-wrap .slick-track {
@@ -3792,6 +3792,18 @@ body {
 
   .main-slider__img {
     top: 140px;
+  }
+
+  .catalog-item:hover .catalog-item__heading {
+    font-size: 18px;
+  }
+
+  .catalog-item:hover .catalog-item-img, .catalog-item:hover .catalog-item__heading {
+    transform: none;
+  }
+
+  .catalog-item:hover .btn {
+    bottom: 30px;
   }
 }
 
