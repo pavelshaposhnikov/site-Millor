@@ -57,13 +57,13 @@ $(document).ready(function () {
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			infinite: true,
-			vertical: false,
-			fade: false,
+			// vertical: false,
+			// fade: false,
 			dots: false,
 			arrows: true,
-			draggable: true,
+			// draggable: true,
 			centerMode: true,
-			focusOnSelect: false,
+			// focusOnSelect: false,
 			variableWidth: true,
 			responsive: [
 				{
@@ -86,25 +86,27 @@ $(document).ready(function () {
 			speed: 500,
 			slidesToShow: 4,
 			slidesToScroll: 1,
-			infinite: false,
-			vertical: false,
-			fade: false,
 			dots: false,
 			arrows: false,
-			draggable: false,
 			centerMode: false,
-			focusOnSelect: false,
-			variableWidth: true,
 			responsive: [
 				{
-					breakpoint: 1240,
+					breakpoint: 1270,
 					settings: {
-						draggable: true,
-						infinite: true,
+						slidesToShow: 3,
+					}
+				},
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2,
+					}
+				},
+				{
+					breakpoint: 700,
+					settings: {
 						slidesToShow: 1,
-						slidesToScroll: 1,
 						dots: true,
-						centerMode: true,
 					}
 				},
 			]
@@ -143,34 +145,52 @@ $(document).ready(function () {
 	if ($('div').hasClass('instagram-wrap')) {
 		$('.instagram-wrap').slick({
 			speed: 500,
-			// slidesToShow: 3,
+			slidesToShow: 3,
 			slidesToScroll: 1,
-			slidesPerRow: 1,
 			infinite: true,
-			rows: 2,
 			dots: false,
 			arrows: true,
 			draggable: true,
-			centerMode: false,
-			focusOnSelect: false,
 			variableWidth: true,
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						rows: 1,
-						slidesPerRow: 2,
-						centerMode: false,
-					},
-					
-					// breakpoint: 990,
-					// settings: {
-					// 	rows: 2,
-					// }
-				},
-			]
+			rows: 2
+		});
+		$('.instagram-wrap--mobile').slick({
+			speed: 500,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			infinite: true,
+			dots: false,
+			arrows: true,
+			draggable: true,
+			variableWidth: true,
+			rows: 1
 		});
 	}
+
+	
+
+
+	// $(document).ready(function(){
+	// 	$('.instagram-wrap').slick({
+	// 		mobileFirst: true,
+	// 			dots: false,
+	// 			slidesPerRow: 1,
+	// 			slidesToShow: 1,
+	// 			rows: 1,
+	// 			responsive: [
+	// 			{
+	// 				breakpoint: 1200,   
+	// 				settings: {
+	// 					slidesPerRow: 3,
+	// 					slidesToShow: 3,
+	// 					rows: 2,
+	// 				}
+	// 			}
+	// 		]
+	// 	});
+	// });
+
+
 	/*---------------------------------------------------end*/
 
 	if ($('div').hasClass('main-slider')) {

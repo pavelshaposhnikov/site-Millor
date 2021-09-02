@@ -354,8 +354,8 @@ a:hover {
   -o-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
-  position: relative;
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .btn:hover {
@@ -496,7 +496,7 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
   .main-bg {
-    background-image: url("../img/main-bg-tablet.svg");
+    background-image: url("../img/main-bg-tablet.png");
     background-repeat: no-repeat;
     -webkit-background-size: 1910px auto;
     -moz-background-size: 1910px auto;
@@ -576,6 +576,26 @@ a:hover {
   display: inline-block;
   margin-right: 100px;
   vertical-align: middle;
+  position: relative;
+}
+
+.header-nav a::before {
+  display: none;
+  content: ' ';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F9B300;
+}
+
+.header-nav a:hover {
+  opacity: 1;
+}
+
+.header-nav a:hover::before {
+  display: block;
 }
 
 .header-nav a:last-child {
@@ -1465,11 +1485,20 @@ a:hover {
   position: absolute;
   right: 0;
   top: 0;
+  height: fit-content;
+}
+
+.main-slider .slick-dots li {
+  padding: 10px;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 10px;
 }
 
 
+
 .main-slider .slick-dots li button {
-  margin-left: 30px;
+  margin-left: 0;
   outline: none;
   border: none;
   border-radius: 50%;
@@ -1478,6 +1507,10 @@ a:hover {
   height: 20px;
   font-size: 0;
   cursor: pointer;
+}
+
+.main-slider .slick-dots li button:before {
+  display: none;
 }
 
 .main-slider .slick-active button {
@@ -1683,7 +1716,7 @@ a:hover {
 
   .main-slider .slick-dots li button {
     background-color: #E9E9E9;
-    margin: auto 30px auto 0;
+    /* margin: auto 30px auto 0; */
   }
 
   .main-slider .slick-active button {
@@ -1695,48 +1728,49 @@ a:hover {
 
   .main-bg {
     background-position: top -50px center;
+    background-position-x: -600px;
     background-size: cover;
 }
 
   .main-slider {
-    margin-top: 60px;
+    margin-top: 0;
     height: 660px;
   }
 }
 
+.catalog-item .btn {
+  max-width: 230px;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, 50px);
+  -moz-transform: translate(-50%, 50px);
+  -ms-transform: translate(-50%, 50px);
+  -o-transform: translate(-50%, 50px);
+  transform: translate(-50%, 50px);
+}
+.catalog-item:hover .catalog-item-img,
+.catalog-item:hover .catalog-item__heading {
+  -webkit-transform: translatey(-60px);
+  -moz-transform: translatey(-60px);
+  -ms-transform: translatey(-60px);
+  -o-transform: translatey(-60px);
+  transform: translatey(-60px);
+}
+.catalog-item:hover .catalog-item__heading {
+  font-size: 21px;
+  line-height: 25px;
+}
+.catalog-item:hover .btn {
+  opacity: 1;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
 @media screen and (min-width: 1240px) {
-  .catalog-item .btn {
-    max-width: 230px;
-    position: absolute;
-    bottom: 45px;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, 50px);
-    -moz-transform: translate(-50%, 50px);
-    -ms-transform: translate(-50%, 50px);
-    -o-transform: translate(-50%, 50px);
-    transform: translate(-50%, 50px);
-  }
-  .catalog-item:hover .catalog-item-img,
-  .catalog-item:hover .catalog-item__heading {
-    -webkit-transform: translatey(-60px);
-    -moz-transform: translatey(-60px);
-    -ms-transform: translatey(-60px);
-    -o-transform: translatey(-60px);
-    transform: translatey(-60px);
-  }
-  .catalog-item:hover .catalog-item__heading {
-    font-size: 21px;
-    line-height: 25px;
-  }
-  .catalog-item:hover .btn {
-    opacity: 1;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-  }
 }
 
 @media screen and (min-width: 1720px) {
@@ -1776,6 +1810,10 @@ a:hover {
   -o-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
+}
+
+.product__slider {
+  overflow: hidden;
 }
 
 .product .discount {
@@ -2220,7 +2258,7 @@ a:hover {
 
 .instagram {
   padding: 85px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: linear-gradient(to bottom, #FFF7E1 50%, #F9B300 50%);
 }
 
@@ -2233,6 +2271,14 @@ a:hover {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.instagram__phone--mobile {
+  display: none;
+}
+
+.instagram-wrap--mobile {
+  display: none !important;
 }
 
 .instagram .slick-arrow {
@@ -2471,7 +2517,7 @@ a:hover {
     margin-bottom: 30px;
   }
   .instagram h2 img {
-    max-width: 60px;
+    max-width: 86px;
     margin-left: 30px;
   }
   .instagram__phone {
@@ -2840,10 +2886,15 @@ a:hover {
   .news .slick-prev {
     left: 35px;
   }
-
   .instagram h2 img {
     display: block;
     margin: 45px 0 0 0;
+    max-width: 60px;
+  }
+
+  .instagram-wrap--mobile .slick-arrow {
+    width: 60px;
+    height: 60px;
   }
   .instagram .slick-next {
     -webkit-transform: rotate(-180deg);
@@ -2852,15 +2903,34 @@ a:hover {
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg);
     top: auto;
-    bottom: 0;
+    bottom: -60px;
+    right: auto;
+    left: 0;
   }
   .instagram-wrap {
     margin-left: 0;
     width: 100%;
   }
+  .instagram-wrap, .instagram__phone--desctop {
+    display: none !important;
+  }
+  .instagram-wrap--mobile, .instagram__phone--mobile {
+    display:block !important;
+  }
+  .instagram__phone--mobile {
+    max-width: 47%;
+    top: 60%;
+    left: auto;
+    right: 0;
+  }
 }
 
+
 @media screen and (max-width: 990px) {
+  .instagram__phone--mobile {
+    top: 67%;
+    max-width: 60%;
+  }
   .main__img {
     max-width: 100%;
   }
@@ -2873,6 +2943,9 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .instagram__phone--mobile {
+    max-width: 75%;
+  }
   .main {
     padding: 0;
     margin-bottom: 0;
@@ -2918,6 +2991,8 @@ a:hover {
 
   .main-slider .slick-dots li {
     padding: 0 !important;
+    margin-right: 30px;
+    margin-left: 0;
   }
   .catalog {
     padding: 30px 0;
@@ -3090,17 +3165,39 @@ a:hover {
 }
 
 @media screen and (max-width: 650px) {
-
-  .main-slider__img {
-    display: none;
+  .main .container {
+    padding: 60px 0 0;
   }
-
+  .main__desc {
+    padding: 0 15px;
+  }
+  .main-slider__img {
+    top: 250px;
+    right: -150px;
+  }
+  .main-slider__item {
+    overflow: hidden !important;
+  }
+  /* .main-slider__item.slick-active {
+    overflow: auto !important;
+  } */
+  .main-slider .slick-dots {
+    left: 15px;
+  }
+  .main__desc .main__btn {
+    z-index: -1;
+  }
+  .instagram__phone--mobile {
+    max-width: 100%;
+  }
 }
 
 /* 487px and less media */
 
 @media screen and (max-width: 487px) {
-
+  .main-slider__img {
+    top: 80px;
+  }
   .title {
     font-size: 20px;
   }
@@ -3119,7 +3216,7 @@ a:hover {
 
   .main-slider {
     margin-top: 0;
-    height: 570px;
+    height: 470px;
   }
 
   .main h1 {
@@ -3130,21 +3227,30 @@ a:hover {
   .main p {
     font-size: 14px;
     max-width: 199px;
+    margin-bottom: 55px;
   }
 
   .main__btn {
     font-size: 18px;
-    margin-top: 185px;
+    margin-top: 80px;
   }
 
   .main-slider .slick-dots {
-    bottom: 120px;
+    bottom: 150px;
   }
 
   .main-slider .slick-dots li button, .catalog-wrap .slick-dots li {
     width: 13px;
     height: 13px;
+    margin-right: 0;
+  }
+
+  .main-slider .slick-dots li, .catalog-wrap .slick-dots li {
     margin-right: 15px;
+  }
+
+  .catalog-wrap .slick-dots {
+    bottom: 10px;
   }
 
   .catalog-item .btn {
@@ -3221,17 +3327,42 @@ a:hover {
   .footer .descr {
     max-width: 245px;
   }
+  .products {
+    padding-top: 0;
+  }
+  .catalog {
+    padding-bottom: 0;
+  }
+  .instagram__phone--mobile {
+    max-width: 115%;
+  }
+  .instagram h2 img {
+    max-width: 40px;
+  }
+  .instagram-wrap--mobile .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
 
+@media (max-width: 440px) {
+  .main-slider__img {
+    top: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-slider__img {
+    top: 140px;
+  }
 }
 
 @media screen and (max-width: 385px) {
-
-  .main-slider {
-    height: 633px;
-  }
-
   .main h1 {
     line-height: 36px;
+  }
+  .instagram__phone--mobile {
+    max-width: 135%;
   }
 }
 
